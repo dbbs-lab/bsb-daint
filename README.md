@@ -8,13 +8,13 @@ Clone this repository into your home folder:
     cd ~
     git clone https://github.com/dbbs-lab/scaffold-daint
 
-To install the scaffold stack into your user directory use the helper script `~/scaffold-daint/helpers/scaffold-install.sh`:
+To install the scaffold stack into your user directory use the `install` helper script:
 
     source ~/scaffold-daint/helpers/scaffold-install.sh
 
 # Usage
 
-In your SLURM job script use the helper script `~/scaffold-daint/helpers/scaffold-load.sh`:
+In your SLURM job script use the `load` helper script:
 
 ```
 #!/bin/bash -l
