@@ -24,5 +24,6 @@ In your SLURM job script use the `load` helper script:
 
 source ~/scaffold-daint/load.sh
 srun scaffold simulate my_simulation --hdf5=my_network_file.hdf5
+```
 
 *Note:* Always use `srun scaffold` for correct initialisation of MPI and parallelisation of the scaffold. Do not use `scaffold compile` on multiple nodes as it cannot run in parallel and will just duplicate the process n times.
