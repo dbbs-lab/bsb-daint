@@ -9,3 +9,5 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/helpers/modules.sh
 source $DIR/helpers/activate-console-scripts.sh
+export PYTHONPATH=~/nrn-install/lib/python:$PYTHONPATH
+export PATH=~/nrn-install/bin:$PATH
