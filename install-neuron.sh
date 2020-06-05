@@ -8,11 +8,8 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/helpers/modules.sh
-source $DIR/helpers/install-mpi4py.sh
-
-
-# Install Cython
-pip install cython
+module load PrgEnv-gnu
+module swap gcc/8.3.0 gcc/7.3.0
 
 # Clone nrn repo
 git clone https://github.com/neuronsimulator/nrn ~/nrn
@@ -22,12 +19,12 @@ CDIR=$PWD
 mkdir ~/nrn/build
 cd ~/nrn/build
 cmake .. \
-  -DCMAKE_INSTALL_PREFIX=install \
-  -DNRN_ENABLE_CORENEURON=OFF \
-  -DNRN_MODULE_INSTALL_OPTIONS="--user" \
-  -DNRN_ENABLE_PYTHON_DYNAMIC=ON \
-  -DNRN_PYTHON_DYNAMIC="`which python`"
+  -DCMAKE_INSTALL_PREFIX=$HOME/nrn-install \
+  -DNRN_ENABLE_CORENEURON=OFF
 
 make -j
 make install
+
+# Restore state
 cd $CDIR
+module swap gcc/7.3.0 gcc/8.3.0
