@@ -21,6 +21,7 @@ cd ~/nrn/build
 cmake .. \
   -DCMAKE_INSTALL_PREFIX=$HOME/nrn-install \
   -DNRN_ENABLE_CORENEURON=OFF
+  -DNRN_ENABLE_INTERVIEWS=OFF
 
 make -j
 make install
