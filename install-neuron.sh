@@ -11,7 +11,7 @@ source $DIR/helpers/modules.sh
 module load PrgEnv-gnu
 
 # Clone nrn repo
-git clone https://github.com/neuronsimulator/nrn ~/nrn
+git clone --depth 1 --branch 7.8.1 https://github.com/neuronsimulator/nrn 
 
 # Run CMake & install
 CDIR=$PWD
