@@ -20,7 +20,8 @@ cd ~/nrn/build
 cmake .. \
   -DCMAKE_INSTALL_PREFIX=$HOME/nrn-install \
   -DNRN_ENABLE_CORENEURON=OFF \
-  -DNRN_ENABLE_INTERVIEWS=OFF
+  -DNRN_ENABLE_INTERVIEWS=OFF \
+  -PYTHON_EXECUTABLE=/opt/python/3.8.2.1/bin/python
 
 make -j
 make install
