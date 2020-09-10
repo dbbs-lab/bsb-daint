@@ -9,7 +9,6 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/helpers/modules.sh
 module load PrgEnv-gnu
-module swap gcc/8.3.0 gcc/7.3.0
 
 # Clone nrn repo
 git clone https://github.com/neuronsimulator/nrn ~/nrn
@@ -28,4 +27,3 @@ make install
 
 # Restore state
 cd $CDIR
-module swap gcc/7.3.0 gcc/8.3.0
