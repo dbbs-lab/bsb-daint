@@ -10,8 +10,8 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 source $DIR/helpers/modules.sh
 
 # Either swap or load PrgEnv-intel
-module swap PrgEnv-cray PrgEnv-intel
-module load PrgEnv-intel
+module swap PrgEnv-cray PrgEnv-gnu
+module load PrgEnv-gnu
 module load CMake
 export CRAYPE_LINK_TYPE=dynamic
 
