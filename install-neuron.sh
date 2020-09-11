@@ -28,5 +28,8 @@ cmake ..  -DCMAKE_INSTALL_PREFIX=$HOME/nrn-install   -DNRN_ENABLE_CORENEURON=OFF
 make -j8
 make install
 
+cd $HOME/nrn/build/src/nrnpython
+python setup.py --quiet build --build-lib=$HOME/nrn/build/lib/python install --user
+
 # Restore state
 cd $CDIR
