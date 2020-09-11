@@ -8,22 +8,22 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/helpers/modules.sh
-module load PrgEnv-gnu
+
+module swap PrgEnv-cray PrgEnv-intel
+module load CMake
+export CRAYPE_LINK_TYPE=dynamic
 
 # Clone nrn repo
-git clone --depth 1 --branch 7.8.1 https://github.com/neuronsimulator/nrn 
+git clone --depth 1 https://github.com/neuronsimulator/nrn
 
 # Run CMake & install
 CDIR=$PWD
 mkdir ~/nrn/build
 cd ~/nrn/build
-cmake .. \
-  -DCMAKE_INSTALL_PREFIX=$HOME/nrn-install \
-  -DNRN_ENABLE_CORENEURON=OFF \
-  -DNRN_ENABLE_INTERVIEWS=OFF \
-  -DPYTHON_EXECUTABLE=/opt/python/3.8.2.1/bin/python
 
-make -j
+# change options
+cmake ..  -DCMAKE_INSTALL_PREFIX=$HOME/nrn-install   -DNRN_ENABLE_CORENEURON=OFF   -DNRN_ENABLE_INTERVIEWS=OFF
+make -j8
 make install
 
 # Restore state
