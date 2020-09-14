@@ -11,4 +11,5 @@ source $DIR/helpers/modules.sh
 
 # Install dbbs scaffold package
 python -m pip install --user bsb==3.4.0b0
+source $DIR/load.sh
 glia compile
