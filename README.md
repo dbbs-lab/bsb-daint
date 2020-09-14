@@ -1,4 +1,4 @@
-# scaffold-daint
+# bsb-daint
 Tools &amp; scripts for running scaffold models on Piz Daint
 
 # Installation
@@ -23,7 +23,7 @@ In your SLURM job script use the `load` helper script:
 # ...
 
 source ~/bsb-daint/load.sh
-srun scaffold simulate my_simulation --hdf5=my_network_file.hdf5
+srun bsb simulate my_simulation --hdf5=my_network_file.hdf5
 ```
 
 **Note:** Always prepend `srun` to the BSB commands for correct initialisation of MPI and
