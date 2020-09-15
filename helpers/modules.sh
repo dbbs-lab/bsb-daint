@@ -4,8 +4,6 @@ module load daint-mc
 module load cray-python/3.8.2.1
 # Cython
 module load PyExtensions/python3-CrayGNU-20.08
-# pip
-module load pip/20.0.2-py3
 # h5py
 module load h5py/2.10.0-CrayGNU-20.08-python3-parallel
 # GSL for NEST
