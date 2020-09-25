@@ -1,5 +1,6 @@
 module load daint-mc
-module swap PrgEnv-cray PrgEnv-gnu
+module unload PrgEnv-gnu
+module load PrgEnv-cray
 module load PyExtensions
 
 export CRAYPE_LINK_TYPE=dynamic
