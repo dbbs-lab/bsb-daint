@@ -13,7 +13,7 @@ source $DIR/helpers/modules.sh
 source $DIR/install-neuron.sh
 
 # Install dbbs scaffold package
-python -m pip install --user bsb[NEURON,MPI]==3.4.0b0
+python -m pip install --user bsb[NEURON,MPI]==3.6.0b1
 
 source $DIR/load.sh
 srun -C mc -p debug glia compile

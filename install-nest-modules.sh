@@ -1,4 +1,7 @@
 PREVIOUS_DIR=$PWD
+
+export CRAYPE_LINK_TYPE=dynamic
+
 cd
 rm -rf cereb-nest
 git clone https://github.com/dbbs-lab/cereb-nest/
