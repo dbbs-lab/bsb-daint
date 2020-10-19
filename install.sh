@@ -9,11 +9,8 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/helpers/modules.sh
 
-# Install NEURON
-source $DIR/install-neuron.sh
-
 # Install dbbs scaffold package
-python -m pip install --user bsb[NEURON,MPI]==3.6.0b3
+python -m pip install --user bsb[NEURON,MPI]==3.6.0b4 NEURON==7.8.1.1
 
 source $DIR/load.sh
 srun -C mc -p debug glia compile
