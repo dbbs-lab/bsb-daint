@@ -9,7 +9,7 @@ export CRAYPE_LINK_TYPE=dynamic
 CDIR=$PWD
 cd
 rm -rf nest-simulator
-git clone https://github.com/dbbs-lab/nest-simulator.git --branch 2.18.0 --depth 1
+git clone https://github.com/dbbs-lab/nest-simulator.git --depth 1
 rm -rf nest-2.18.0-install/
 mkdir nest-2.18.0-install/
 cd nest-2.18.0-install
