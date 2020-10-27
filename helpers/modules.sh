@@ -1,5 +1,8 @@
 # Multicore stack
 module load daint-mc
+# Unload GNU & load Cray PE
+module unload PrgEnv-gnu/6.0.8
+module load PrgEnv-cray/6.0.8
 # Python 3 & mpi4py
 module load cray-python/3.8.2.1
 # Cython
