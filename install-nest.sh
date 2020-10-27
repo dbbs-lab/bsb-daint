@@ -1,9 +1,13 @@
-module load daint-mc
-module unload PrgEnv-gnu/6.0.8
-module load PrgEnv-cray/6.0.8
-module load PyExtensions/python3-CrayGNU-20.08
-module load GSL/2.5-CrayCCE-20.08
+# Bash sourcefile dir snippet from https://stackoverflow.com/a/246128/1016004
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+  DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
+source $DIR/modules.sh
 export CRAYPE_LINK_TYPE=dynamic
 
 CDIR=$PWD
