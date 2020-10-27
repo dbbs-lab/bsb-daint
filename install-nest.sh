@@ -7,7 +7,7 @@ while [ -h "$SOURCE" ]; do
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
-source $DIR/modules.sh
+source $DIR/helpers/modules.sh
 export CRAYPE_LINK_TYPE=dynamic
 
 CDIR=$PWD
