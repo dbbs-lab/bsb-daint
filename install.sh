@@ -9,8 +9,14 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/helpers/modules.sh
 
+ACC=${1:-$ACCOUNT}
+if [ -z $ACC ]; then
+        echo "Either set \$ACCOUNT or pass the account to use as first arg to the command."
+	return 1
+fi
+
 # Install dbbs scaffold package
-python -m pip install --user bsb[NEURON,MPI]==3.6.2 NEURON==7.8.1.1
+python -m pip install --user bsb[NEURON,MPI]==3.6.3 NEURON==7.8.1.1
 
 source $DIR/load.sh
-srun -C mc -p debug glia compile
+srun -A $ACC -C mc -p debug glia compile
