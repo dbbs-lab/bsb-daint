@@ -16,7 +16,7 @@ if [ -z $ACC ]; then
 fi
 
 # Install dbbs scaffold package
-python -m pip install --user bsb[NEURON,MPI]==3.6.4 NEURON==7.8.1.1
+python -m pip install --user bsb[NEURON,MPI]==3.6.6 NEURON==7.8.1.1
 
 source $DIR/load.sh
 srun -A $ACC -C mc -p debug glia compile
