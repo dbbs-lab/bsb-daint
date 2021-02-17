@@ -16,6 +16,7 @@ rm -rf nest-2.18.0-install/
 
 cmake \
   -Dwith-mpi=ON \
+  -Dwith-openmp=OFF \
   -Dwith-python=3 \
   -DPYTHON_EXECUTABLE=/opt/python/3.8.2.1/bin/python \
   -DPYTHON_LIBRARY=/opt/python/3.8.2.1/lib/libpython3.8.so \
