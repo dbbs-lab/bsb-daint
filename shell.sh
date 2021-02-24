@@ -1,3 +1,4 @@
+source $HOME/bsb-daint/load.sh
 alias queue="squeue -u $ACCOUNT"
 alias maa='module avail 2>&1 |grep -i'
 alias debug="srun -C mc -p debug -A $PROJECT $@"
