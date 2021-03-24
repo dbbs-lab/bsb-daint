@@ -9,7 +9,7 @@ export CRAYPE_LINK_TYPE=dynamic
 CDIR=$PWD
 cd
 rm -rf nest-simulator
-git clone https://github.com/nest/nest-simulator.git --depth 1
+git clone https://github.com/dbbs-lab/nest-simulator.git --depth 1
 cd nest-simulator
 mkdir build
 cd build
