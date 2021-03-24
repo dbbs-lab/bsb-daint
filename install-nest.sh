@@ -1,6 +1,6 @@
 module load daint-mc
 module unload PrgEnv-gnu/6.0.9
-module load PrgEnv-cray/6.0.0
+module load PrgEnv-cray/6.0.9
 module load PyExtensions/python3-CrayGNU-20.11
 module load GSL/2.5-CrayCCE-20.11
 
