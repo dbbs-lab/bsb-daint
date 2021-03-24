@@ -10,6 +10,7 @@ CDIR=$PWD
 cd
 rm -rf nest-simulator
 git clone https://github.com/nest/nest-simulator.git --depth 1
+cd nest-simulator
 mkdir build
 cd build
 rm -rf nest-2.18.0-install/
