@@ -1,8 +1,8 @@
 module load daint-mc
-module unload PrgEnv-gnu/6.0.9
-module load PrgEnv-cray/6.0.9
-module load PyExtensions/python3-CrayGNU-20.11
-module load GSL/2.5-CrayCCE-20.11
+module switch PrgEnv-cray/6.0.9 PrgEnv-gnu/6.0.9
+module load GSL/2.5-CrayGNU-20.11
+module load cray-python
+module load CMake/3.14.5
 
 export CRAYPE_LINK_TYPE=dynamic
 
