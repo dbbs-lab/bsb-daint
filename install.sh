@@ -22,4 +22,6 @@ else
   tar -xf blender-2.91.0-linux64.tar.xz
   mv blender-2.91.0-linux64.tar.xz $STORE/blender
   rm blender-2.91.0-linux64.tar.xz
+  # Install latest Neuro3D into Blender
+  curl -Ls https://github.com/Helveg/neuro3d/releases/latest/download/install | python
 fi
