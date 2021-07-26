@@ -8,6 +8,7 @@
 #SBATCH --partition=normal
 #SBATCH --constraint=mc&startx
 #SBATCH --hint=nomultithread
+#SBATCH --mem=120G
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
