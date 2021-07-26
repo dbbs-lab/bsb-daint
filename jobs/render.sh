@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH --account=$ACCOUNT
+#SBATCH --account=ich027
 #SBATCH --mail-type=ALL
 #SBATCH --ntasks-per-core=1
 #SBATCH --ntasks-per-node=36
