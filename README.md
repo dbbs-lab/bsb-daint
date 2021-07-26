@@ -16,7 +16,7 @@ export ACCOUNT="my_account"
 source ~/bsb-daint/shell.sh
 ```
 
-**Note:** Replace `USER`, `PROJECT` and `ACCOUNT` with the correct information.
+**Note:** Replace `PROJECT` and `ACCOUNT` with the correct information.
 
 Install the scaffold stack into your shared project directory:
 
