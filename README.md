@@ -8,20 +8,23 @@ Clone this repository into your home folder:
     cd ~
     git clone https://github.com/dbbs-lab/bsb-daint
 
-To install the scaffold stack into your user directory use the `install` helper script:
-
-    source ~/bsb-daint/install.sh
-
-To hook some neat shortcuts into your shell, add this to `~/.bashrc`:
+Add the following to `~/.bashrc`:
 
 ```
-export USER="my_username"
 export PROJECT="my_project"
 export ACCOUNT="my_account"
 source ~/bsb-daint/shell.sh
 ```
 
 **Note:** Replace `USER`, `PROJECT` and `ACCOUNT` with the correct information.
+
+Install the scaffold stack into your shared project directory:
+
+    source ~/bsb-daint/install.sh
+    
+You can also opt to install it elsewhere, like in your user directory:
+
+    source ~/bsb-daint/install.sh $HOME
 
 # Usage
 
