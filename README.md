@@ -15,12 +15,13 @@ To install the scaffold stack into your user directory use the `install` helper 
 To hook some neat shortcuts into your shell, add this to `~/.bashrc`:
 
 ```
-export ACCOUNT="bp000347"
-export PROJECT="ich027"
+export USER="my_username"
+export PROJECT="my_project"
+export ACCOUNT="my_account"
 source ~/bsb-daint/shell.sh
 ```
 
-**Note:** Replace `ACCOUNT` and `PROJECT` with the correct information.
+**Note:** Replace `USER`, `PROJECT` and `ACCOUNT` with the correct information.
 
 # Usage
 
