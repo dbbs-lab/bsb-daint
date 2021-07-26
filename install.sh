@@ -24,4 +24,6 @@ else
   rm blender-2.91.0-linux64.tar.xz
   # Install latest Neuro3D into Blender
   curl -Ls https://github.com/Helveg/neuro3d/releases/latest/download/install | python
+  # Fix missing `setuptools` due to environment error
+  $STORE/blender/2.91/python/bin/python3.7m -m pip install --ignore-installed --prefix=$STORE/blender/2.91/python setuptools
 fi
