@@ -1,7 +1,7 @@
 # Multicore stack
 module load daint-mc
 # Python 3 & mpi4py
-module load cray-python/3.8.5.0
+module load cray-python/3.8.5.1
 # Cython
 module load PyExtensions/python3-CrayGNU-20.11
 # h5py
