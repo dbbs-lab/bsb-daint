@@ -1,11 +1,11 @@
 # Multicore stack
 module load daint-mc
 # Python 3 & mpi4py
-module load cray-python/3.8.5.0
+module load cray-python/3.9.4.1
 # Cython
-module load PyExtensions/python3-CrayGNU-20.11
+module load Cython/0.29.25-CrayGNU-21.09
 # h5py
-module load h5py/2.10.0-CrayGNU-20.11-python3-parallel
+module load h5py/3.6.0-CrayGNU-21.09-parallel
 # GSL for NEST
-module load GSL/2.5-CrayGNU-20.11
+module load GSL/2.7-CrayGNU-21.09
 
