@@ -8,6 +8,8 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 
 source $DIR/../helpers/modules.sh
+module load gcc/9.3.0
+module switch PrgEnv-cray PrgEnv-gnu
 source $DIR/../helpers/activate-env.sh
 source $DIR/mpi4py.sh
 
