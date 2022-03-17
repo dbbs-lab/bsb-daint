@@ -10,3 +10,5 @@ module load h5py/3.6.0-CrayGNU-21.09-parallel
 module load GSL/2.7-CrayGNU-21.09
 # CMake for installing NEST
 module load CMake
+# CUDA for Arbor
+module load cudatoolkit
